@@ -1,0 +1,92 @@
+<HTML>
+                  <HEAD>
+			<TITLE> Registration form </TITLE>
+			<link rel="stylesheet" type="text/css" href="rules.css">
+			<style type="text/css">
+					body
+					{
+						background-repeat:no-repeat;
+						background-position:center;
+						background-size:1500px  800px;	
+					}
+					
+					.registerbtn
+					 {
+  						background-color: black;
+  						color: white;
+  						padding: 16px 20px;
+  						margin: 8px 0;
+ 	 					cursor: pointer;
+  						width: 20%;
+  						opacity: 0.9;
+					}
+						
+					
+			</style>
+			<SCRIPT LANGUAGE="javascript">
+				     function validate()
+				     {
+                                                              var name=document.getElementById("txtUser").value;
+					  var pwd=document.getElementById("txtPwd").value;
+				   var conPwd=document.getElementById("txtConPwd").value;
+				           var email=document.getElementById("txtEmail").value;
+					if(name=="")
+					{
+					            alert("Enter valid User Name");
+						document.getElementById("txtUser").focus();
+					}
+			
+					   else
+					  {
+						alert("User Name is valid");
+					  }
+					   if((pwd=="")||(conPwd==""))
+					  {
+						alert("Enter password");
+						document.getElementById("txtPwd").focus();
+					  }
+					   if(pwd!=conPwd)
+					  {
+						alert("Entered password do not match");
+						document.getElementById("txtPwd").value="";
+                                                                   document.getElementById("txtConPwd").value="";
+				                       document.getElementById("txtPwd").focus();
+					  }
+					  var atPos=email.indexOf("@");
+					  var dotPos=email.lastIndexOf(".");
+					  if(atPos<1)
+					 {
+						alert("Invalid Email Id");
+					 }
+					 else
+						alert("Valid Email Id");
+						alert("You've registered successfully");
+				}
+			   </SCRIPT>
+	      </HEAD>
+	      <body  background="images\gym35.png">
+	<nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo">
+                <img src="images\logo.jpg">
+            </div>
+            <li><a href="home.html">HOME</a></li>
+	 <li><a href="fitness.html">FITNESS</a></li>
+	 <li><a href="register.html">REGISTER</a></li>
+	<li><a href="contact.html">CONTACT</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+        </ul>
+ 
+       
+    </nav>
+			  <center>   <H1> Register Now </H1> 
+				Please fill in this form to create an account.
+			    <h1> <FORM>
+				           Name: <INPUT TYPE="text" ID="txtUser"> <BR> <BR>
+				           Password: <INPUT TYPE="password" ID="txtPwd"> <BR> <BR>
+		                 	           Confirm Password: <INPUT TYPE="password" ID="txtConPwd"> <BR> <BR>
+			                          Email: <INPUT TYPE="text" ID="txtEmail"> <BR> <BR>
+			     <INPUT TYPE="submit"  VALUE="Register" onclick="validate();" class="registerbtn">
+			     </FORM></center></h1>
+	        </BODY>
+</HTML>

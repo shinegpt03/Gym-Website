@@ -1,0 +1,68 @@
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+ 
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        position: sticky;
+        top: 0;
+        cursor: pointer;
+    }
+ 
+    .background {
+        background: black;
+        background-blend-mode: darken;
+        background-size: cover;
+    }
+.bg
+{
+	
+}
+ 
+    .nav-list {
+        width: 70%;
+        display: flex;
+        align-items: center;
+	text-align:right;
+    }
+ 
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+ 
+    .logo img {
+        width: 170px;
+        border-radius: 50px;
+    }
+ 
+    .nav-list li {
+        list-style: none;
+        padding: 26px 30px;
+    }
+ 
+    .nav-list li a {
+        text-decoration: none;
+        color: white;
+    }
+ 
+   
+    .rightnav {
+        width: 30%;
+        text-align: right;
+    }
+    .text-footer {
+        text-align: center;
+        padding: 30px 0;
+        font-family: 'Ubuntu', sans-serif;
+        display: flex;
+        justify-content: center;
+        color: white;
+    }
+
+</style>
